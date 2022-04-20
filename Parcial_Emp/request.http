@@ -1,0 +1,45 @@
+###
+POST http://localhost:5000/api/v1/employees/employee HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Gabriel",
+    "lastname": "Pattinson",
+    "address": {
+      "geo": [1231324,234433],
+      "city": "Manizales",
+      "code_zip": 34532
+    },
+    "departament": {
+      "id_departament": 2,
+      "name_departament": "Caldas"
+    }
+}
+
+###
+GET http://localhost:5000/api/v1/employees HTTP/1.1
+
+###
+GET http://localhost:5000/api/v1/employees/6260090ad8195e5071304773 HTTP/1.1
+
+###
+PUT http://localhost:5000/api/v1/employees/6260090ad8195e5071304773 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Carlosadd",
+    "lastname": "Pattinson",
+    "address": {
+      "geo": [1231324,234433],
+      "city": "Manizales",
+      "code_zip": 34532
+    },
+    "departament": {
+      "id_departament": 2,
+      "name_departament": "Caldas"
+    }
+}
+
+
+###
+DELETE http://localhost:5000/api/v1/employees/623be9f8ed932cfcfc7988d5 HTTP/1.1
